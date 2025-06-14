@@ -21,7 +21,7 @@ section { /* Apply to your section IDs */
 body {
     font-family: 'MinecraftRegular', 'Inter', sans-serif;
     background: radial-gradient(circle at 15% 50%, #4a0080, transparent 70%),
-                radial-gradient(circle at 85% 20%, #001a4a, transparent 70%),
+                radial-gradient(circle at 85% 20%, #02286e, transparent 70%),
                 radial-gradient(circle at 50% 80%, #6a00ff, transparent 70%);
     background-color: #050010;
     color: #e0e0e0;
