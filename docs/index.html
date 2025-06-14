@@ -45,13 +45,14 @@
             </nav>
         </div>
     </header>
-    <div style="display: flex; justify-content: center; align-items: center;font-size: 50px;vertical-align: middle;height: 100%;">
+    <div style="display: flex; justify-content: center; align-items: center;font-size: 50px;vertical-align: middle;height: 100%;flex-direction: column">
         <br>
         <br>
         <br>
+        <h3 class="rainbow">We are working on this right now!</h3>
+        <h3 class="rainbow">Stay tuned!</h3>
         <br>
-        <br>
-        <h3>Work in progress</h3>
+        <p style="font-size: 20px;color: rgb(173, 250, 255);">You will be redirected in 5 seconds..</p>
     </div>
 
     <!-- Footer -->
@@ -68,9 +69,11 @@
         crossorigin="anonymous"></script>
     <script>
         document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        return
         setTimeout(()=>{
             window.location.href = "https://alonsoaliaga.com/tools"
-        },1500)
+        },5000)
     </script>
 </body>
 </html>
