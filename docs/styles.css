@@ -1,0 +1,404 @@
+/* Custom Minecraft Fonts */
+@font-face {
+    font-family: MinecraftRegular;
+    src: url(https://raw.githubusercontent.com/AlonsoAliaga/generator/main/assets/fonts/MinecraftRegular.otf);
+}
+@font-face {
+    font-family: MinecraftBold;
+    src: url(https://raw.githubusercontent.com/AlonsoAliaga/generator/main/assets/fonts/MinecraftBold.otf);
+}
+@font-face {
+    font-family: MinecraftItalic;
+    src: url(https://raw.githubusercontent.com/AlonsoAliaga/generator/main/assets/fonts/MinecraftItalic.otf);
+}
+@font-face {
+    font-family: MinecraftBoldItalic;
+    src: url(https://raw.githubusercontent.com/AlonsoAliaga/generator/main/assets/fonts/MinecraftBoldItalic.otf);
+}
+section { /* Apply to your section IDs */
+  scroll-margin-top: 120px; /* Example: If your navbar is 60px high */
+}
+body {
+    font-family: 'MinecraftRegular', 'Inter', sans-serif;
+    background: radial-gradient(circle at 15% 50%, #4a0080, transparent 70%),
+                radial-gradient(circle at 85% 20%, #001a4a, transparent 70%),
+                radial-gradient(circle at 50% 80%, #6a00ff, transparent 70%);
+    background-color: #050010;
+    color: #e0e0e0;
+    position: relative;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+                      radial-gradient(circle, rgba(255, 255, 255, 0.08) 0.5px, transparent 0.5px);
+    background-size: 50px 50px, 20px 20px;
+    opacity: 0.7;
+    pointer-events: none;
+    z-index: -1;
+}
+/* Increased max-width for the main container to allow more space for grid items */
+.container {
+    max-width: 1400px;
+}
+/* Header & Navigation */
+.header-nav {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgba(106, 0, 255, 0.3);
+}
+.nav-link {
+    font-family: 'MinecraftBold', sans-serif;
+    color: #e0e0e0;
+    padding: 0.75rem 1rem;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    border-radius: 0.375rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.nav-link:hover {
+    color: #a0a0ff;
+    background-color: rgba(106, 0, 255, 0.2);
+}
+.rainbow {
+    position:relative;
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent !important;
+    animation: rainbow_animation 2s ease-in-out infinite !important;
+    background-size: 400% 100%;
+}
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+/* Reusing btn-primary style with adjustments for nav bar */
+.btn-primary {
+    background-image: linear-gradient(to right, #6a00ff, #8a2be2);
+    color: white;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(106, 0, 255, 0.4);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-family: 'MinecraftBold', sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    white-space: nowrap; /* Prevent wrapping for buttons in nav bar */
+}
+.btn-primary:hover {
+    background-position: right center;
+    background-image: linear-gradient(to right, #8a2be2, #6a00ff);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+    transform: translateY(-2px);
+}
+/* New button style for Support */
+.btn-secondary {
+    background-image: linear-gradient(to right, #5865F2, #4F5CD6);
+    color: white;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(88, 101, 242, 0.4);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-family: 'MinecraftBold', sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    white-space: nowrap; /* Prevent wrapping for buttons in nav bar */
+}
+.btn-secondary:hover {
+    background-position: right center;
+    background-image: linear-gradient(to right, #4F5CD6, #5865F2);
+    box-shadow: 0 8px 20px rgba(88, 101, 242, 0.6);
+    transform: translateY(-2px);
+}
+/* Icon styling within buttons/links - now targets <img> for external SVGs */
+.btn-primary img, .btn-secondary img {
+    width: 24px; /* Fixed width for icon */
+    height: 24px; /* Fixed height for icon */
+    vertical-align: middle;
+    filter: invert(100%); /* Invert colors to make black SVGs white */
+    flex-shrink: 0; /* Prevent icon from shrinking in flex container */
+    object-fit: contain; /* Ensure the image fits without cropping */
+}
+.nav-link svg { /* Keep for other internal SVGs if any */
+    width: 1.2em;
+    height: 1.2em;
+    filter: invert(100%) brightness(200%);
+    vertical-align: middle;
+}
+/* Content Grid - Adjusted for consistent 3-column layout and better spacing */
+.content-grid {
+    display: grid;
+    /* Auto-fit columns, aiming for ~350px width per card, but flexible. */
+    /* This ensures 1, 2, or 3 columns depending on screen size, without going over 3. */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Min width 320px for cards */
+    gap: 1.5rem; /* Gap between grid items */
+    justify-items: center; /* Center items in their grid cells */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    /* New: Constrain max-width of the grid itself to center the entire set of cards */
+    max-width: calc(3 * 350px + 2 * 1.5rem); /* 3 cards * max_card_width (approx) + 2 * gap */
+    margin-left: auto; /* Center the grid horizontally */
+    margin-right: auto; /* Center the grid horizontally */
+}
+/* On smaller screens, allow the grid to take full width */
+@media (max-width: 1023px) { /* Up to lg breakpoint minus 1px */
+    .content-grid {
+        max-width: 100%; /* Allow full width on smaller screens */
+    }
+}
+/* Item Card (General) */
+.item-card {
+    background-color: rgba(43, 0, 85, 0.75);
+    border: 1px solid #5a0090;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    width: 100%; /* Ensure card takes full grid cell width */
+    max-width: 350px; /* Max width for cards to maintain aesthetic, adjusted for grid */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.item-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.7);
+}
+/* Image Carousel (for Plugins/Packs) */
+.image-carousel {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    overflow: hidden;
+    border-bottom: 1px solid rgba(106, 0, 255, 0.2);
+}
+.carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0; /* Hidden by default for fade */
+    transition: opacity 0.5s ease-in-out; /* Fade transition */
+}
+.carousel-image.active {
+    opacity: 1; /* Show active image */
+}
+.carousel-nav-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    opacity: 0.1;
+    transition: opacity 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+/* Arrows appear on hover of the entire card */
+.item-card:hover .carousel-nav-arrow {
+    opacity: 0.8;
+}
+.carousel-nav-arrow:hover {
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 1 !important;
+}
+.carousel-nav-arrow.left {
+    left: 0.5rem;
+}
+.carousel-nav-arrow.right {
+    right: 0.5rem;
+}
+/* Price Tag */
+.price-tag {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    color: white;
+    font-family: 'MinecraftBold', sans-serif;
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.375rem;
+    font-size: 0.9rem;
+    z-index: 5;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+.price-tag.free {
+    background-color: #00ff00;
+}
+/* Item Content (General) */
+.item-content {
+    padding: 1rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.item-content h3 {
+    font-family: 'MinecraftBold', sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+.item-content p {
+    font-size: 0.9rem;
+    color: #ccc;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+/* Footer styles */
+.footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    border-top: 1px solid rgba(106, 0, 255, 0.3);
+    padding: 1.5rem 0;
+    margin-top: auto;
+}
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Default to column for small screens */
+    align-items: center; /* Center items for small screens */
+    gap: 0.75rem; /* Gap between logo and text */
+    justify-content: center; /* Center content horizontally */
+}
+@media (min-width: 640px) { /* For larger screens, arrange in a row */
+    .footer-content {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+.footer-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #6a00ff;
+}
+.footer-text {
+    font-family: 'MinecraftBold', sans-serif;
+    color: #e0e0e0;
+    line-height: 1.2;
+    text-align: center; /* Keep text centered for both layouts */
+}
+/* --- STYLES FOR HANDY TOOLS SECTION --- */
+.tool-item-card {
+    display: flex;
+    flex-direction: column; /* Default to column for small screens */
+    align-items: center; /* Center items in column layout */
+    background-color: rgba(43, 0, 85, 0.75);
+    border: 1px solid #5a0090;
+    border-radius: 0.75rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    width: 100%;
+    max-width: 350px; /* Match max-width of general cards for consistency */
+    position: relative;
+    padding: 1rem; /* Add padding to the card itself */
+}
+.tool-item-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.7);
+}
+.tool-image-container {
+    flex-shrink: 0; /* Prevent image from shrinking */
+    width: 120px; /* Smaller fixed width for square image */
+    height: 120px; /* Fixed height for square image */
+    border-radius: 0.5rem; /* Slightly rounded corners for image */
+    overflow: hidden;
+    margin-bottom: 1rem; /* Space below image in column layout */
+}
+.tool-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.tool-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center; /* Center text content for small screens */
+    width: 100%; /* Take full width within column layout */
+}
+.tool-content h3 {
+    font-family: 'MinecraftBold', sans-serif;
+    font-size: 1rem; /* Made tool title smaller */
+    color: #fff;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+.tool-content p {
+    font-size: 0.8rem;
+    color: #ccc;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+/* Responsive adjustments for tool-item-card */
+@media (min-width: 640px) { /* On small/medium screens and up */
+    .tool-item-card {
+        flex-direction: row; /* Arrange items in a row */
+        align-items: flex-start; /* Align items to the top in a row */
+        text-align: left; /* Align text to left in row layout */
+    }
+    .tool-image-container {
+        margin-right: 1rem; /* Space to the right of the image */
+        margin-bottom: 0; /* Remove bottom margin in row layout */
+    }
+    .tool-content {
+        text-align: left; /* Align text to left in row layout */
+    }
+}
+/* Specific style for "FREE" tag on tools */
+.price-tag.tool-free {
+    background-color: #32CD32; /* Lime Green */
+    /* position: absolute;
+    top: 0.75rem;
+    right: 0.75rem; */
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.375rem;
+    font-size: 0.9rem;
+    font-family: 'MinecraftBold', sans-serif;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    z-index: 5;
+    margin-top: 0.5rem; /* Space from description above it */
+    margin-bottom: 0.5rem; /* Space before content below it */
+    display: inline-block; /* Treat as block for padding/margin but stay inline with text flow if needed */
+    text-align: left; /* Ensure text inside tag is aligned left */
+}
