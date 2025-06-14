@@ -402,3 +402,25 @@ body::before {
     display: inline-block; /* Treat as block for padding/margin but stay inline with text flow if needed */
     text-align: left; /* Ensure text inside tag is aligned left */
 }
+#mybutton {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 0;
+  border: none;
+  background: none;
+  font-family: MinecraftRegular;
+}
+#mybutton:hover {
+  bottom: 15px;
+  right: 15px;
+  padding: 0;
+  border: none;
+  background: none;
+}
+.buttonface {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  background: none;
+}

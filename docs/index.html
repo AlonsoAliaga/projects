@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="flex flex-col">
+    <div id="online-counter" data-failed="0" style="position: relative;background-color: green;height: 30px;width: 100%;display: flex; align-items: center;justify-content: center;min-height: min-content;text-align: center;">🟢 0 villagers watching… waiting… who’ll trade first?</div>
     <!-- Header & Navigation Bar -->
     <header class="header-nav shadow-lg py-4 px-4 sticky top-0 z-50">
         <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
@@ -65,15 +66,23 @@
             <p class="text-gray-400 text-sm mt-2">&copy; 2020 - <span id="current-year"></span> All rights reserved.</p>
         </div>
     </footer>
+    <div id="mybutton">
+        <div style="position: center;display: inline-block;">
+            <button class="buttonface"><a href="https://alonsoaliaga.github.io"><img src="https://raw.githubusercontent.com/AlonsoAliaga/alonsoaliaga.github.io/main/assets/img/apple-touch-icon.png"></a></button>
+            <br>
+            <div id="visitor-counter" style="text-align: center;">
+                <span id="counter-amount" style="font-family: MinecraftBold;font-weight: bold;">Visits: 0</span>
+            </div>
+        </div>
+    </div>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5185973148525065"
         crossorigin="anonymous"></script>
     <script>
         document.getElementById('current-year').textContent = new Date().getFullYear();
-
-        return
         setTimeout(()=>{
             window.location.href = "https://alonsoaliaga.com/tools"
         },5000)
     </script>
+    <script src="script2.js"></script>
 </body>
 </html>
