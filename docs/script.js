@@ -289,7 +289,7 @@ const pluginsData = {
     name: "AlonsoTags",
     description: "A highly customizable tag plugin for your network.",
     images: [
-      "https://i.imgur.com/zPgiAnm.png",
+      "https://i.imgur.com/rYpPZop.png", //NEW FORMAT
       "https://i.gyazo.com/b42cd63c43df39a37aa2f723a50b01e5.png",
       "https://i.gyazo.com/5ecbb6efe5aa1f1030487da804c18393.png"
     ],
@@ -303,7 +303,7 @@ const pluginsData = {
     name: "AlonsoTagsPro",
     description: "A highly customizable tag plugin for your network.",
     images: [
-      "https://i.imgur.com/3H3uFcS.png",
+      "https://i.imgur.com/561752U.png", //NEW FORMAT
       "https://i.gyazo.com/9eebc8b27b8181de53e457c4a1c08b27.png",
       "https://i.gyazo.com/5ecbb6efe5aa1f1030487da804c18393.png",
       "https://i.gyazo.com/3ef3e1f4432fe0bd5420afaca6ea6bf9.png",
@@ -323,7 +323,7 @@ const pluginsData = {
     name: "AlonsoPlus",
     description: "Create a ranking system for your players.",
     images: [
-      "https://i.imgur.com/cuEawqL.png",
+      "https://i.imgur.com/7WRQPHE.png", //NEW FORMAT
       "https://i.gyazo.com/7e6cf7910f37dd3a613e75d9bc9b31d6.png",
       "https://i.imgur.com/A7AZa7o.png",
       "https://i.imgur.com/59TsUyN.png",
