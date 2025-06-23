@@ -325,7 +325,11 @@ const pluginsData = {
     images: [
       "https://i.imgur.com/cuEawqL.png",
       "https://i.gyazo.com/7e6cf7910f37dd3a613e75d9bc9b31d6.png",
-      "https://i.imgur.com/xn8dDGF.png"
+      "https://i.imgur.com/A7AZa7o.png",
+      "https://i.imgur.com/59TsUyN.png",
+      "https://i.imgur.com/jYtMNE3.png",
+      "https://i.imgur.com/J3HyEq7.png", 
+      "https://i.imgur.com/7isKqHN.gif", 
     ],
     price: 9.99,
     priceColor: "#06339c", 
