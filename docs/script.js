@@ -343,7 +343,7 @@ const pluginsData = {
     name: "AlonsoLevels",
     description: "A highly customizable level system for your network that actually works.",
     images: [
-      "https://i.imgur.com/ZZlHK7n.png",
+      "https://i.imgur.com/mSgHWrs.png", //NEW FORMAT
       "https://i.gyazo.com/faff4e76933887277fe694fe28f81fd1.png",
       "https://i.gyazo.com/56f21d413ef63b78e123bcdb195b8232.png",
       "https://i.gyazo.com/8157ca77f761e554058cc422ad0256c9.png",
@@ -361,7 +361,8 @@ const pluginsData = {
     name: "AlonsoLevelsPro",
     description: "A highly customizable level system for your network that actually works.",
     images: [
-      "https://i.imgur.com/ZUnVTf4.png",
+      //"https://i.imgur.com/ZUnVTf4.png",
+      "https://i.imgur.com/hmcVq63.png", //NEW FORMAT
       "https://i.gyazo.com/02f5df6c089b82fb3988c24ade0b1714.png",
       "https://i.gyazo.com/d38136f5e105e69119314bff003d24c3.png",
       "https://i.gyazo.com/a6c00814533ff7ccda8bd81f9ad53770.gif",
@@ -387,7 +388,8 @@ const pluginsData = {
     description: "Run, get to loot and kill the Beast!",
     icon: "paw-claws",
     images: [
-      "https://i.imgur.com/0u1mwol.png",
+      //"https://i.imgur.com/0u1mwol.png",
+      "https://i.imgur.com/CuoLh1H.png", //NEW FORMAT
       "https://i.imgur.com/9Cl4sob.gif",
       "https://i.imgur.com/ijwMVCc.png",
       "https://i.imgur.com/QrYwSG5.png",
@@ -405,7 +407,8 @@ const pluginsData = {
     name: "BetterBackpacks",
     description: "Backpacks with custom textures and unique features!",
     images: [
-      "https://i.imgur.com/kk5ppIh.png",
+      //"https://i.imgur.com/kk5ppIh.png",
+      "https://i.imgur.com/X21cx5Z.png", //NEW FORMAT
       "https://i.gyazo.com/e108cc5a75a10f0894dd5e1f68e0eac0.png",
       "https://i.gyazo.com/92d959160eacb302b8c79d9c06cbcc36.png",
       "https://i.gyazo.com/ebe9e50f19f2a07af16771032e008209.gif",
@@ -420,7 +423,8 @@ const pluginsData = {
     name: "BetterBackpacksPro",
     description: "Backpacks with custom textures and unique features, skins and upgrades!",
     images: [
-      "https://i.imgur.com/kk5ppIh.png",
+      //"https://i.imgur.com/kk5ppIh.png",
+      "https://i.imgur.com/4jLoR3M.png", //NEW FORMAT
       "https://i.imgur.com/WuujleM.png",
       "https://i.gyazo.com/4fdc788867151d38ca6d0110cd40195d.png",
       "https://i.imgur.com/3z1iFYC.png",
@@ -443,7 +447,8 @@ const pluginsData = {
     description: "The free chat alternative for your server.",
     icon: "comment",
     images: [
-      "https://i.imgur.com/HBdF94t.png",
+      //"https://i.imgur.com/HBdF94t.png",
+      "https://i.imgur.com/zLkUgEY.png", //NEW FORMAT
       "https://i.imgur.com/dRjYDHH.png",
       "https://i.imgur.com/EGrJotN.gif"
     ],
@@ -458,7 +463,8 @@ const pluginsData = {
     description: "Join message & quit message! Announce your players and staff members correctly.",
     icon: "right-to-bracket",
     images: [
-      "https://i.imgur.com/eie4iu4.png",
+      //"https://i.imgur.com/eie4iu4.png",
+      "https://i.imgur.com/9CsKR1f.png", //NEW FORMAT
       "https://i.imgur.com/YIsJiXT.png",
       "https://i.imgur.com/PlzxDEn.png"
     ],
@@ -509,7 +515,8 @@ const pluginsData = {
     name: "BetterRevive",
     description: "Give your players a second chance to live.",
     images: [
-      "https://i.imgur.com/f2LU8lq.png",
+      //"https://i.imgur.com/f2LU8lq.png",
+      "https://i.imgur.com/YsRNpm9.png", //NEW FORMAT
       "https://imgur.com/YBZjZsQ.gif",
       "https://imgur.com/MhLeuQt.gif",
       "https://imgur.com/lT6GmuY.gif"
@@ -542,7 +549,8 @@ const pluginsData = {
     name: "BetterEggs",
     description: "Make your players walk to hatch mystery eggs.",
     images: [
-      "https://i.imgur.com/AOG807f.png",
+      //"https://i.imgur.com/AOG807f.png",
+      "https://i.imgur.com/NMpjuV8.png", //NEW FORMAT
       "https://i.imgur.com/MfNMMsr.gif",
       "https://i.imgur.com/u4pW4R9.gif",
       "https://i.gyazo.com/88556f9ed6dd507d700a0d47e66523d4.png",
@@ -558,7 +566,8 @@ const pluginsData = {
     name: "BetterHeads",
     description: "Give your players/builders access to amazing heads for a price.",
     images: [
-      "https://i.imgur.com/Gm8W7C2.png",
+      //"https://i.imgur.com/Gm8W7C2.png",
+      "https://i.imgur.com/fNL42da.png", //NEW FORMAT
       "https://i.gyazo.com/57b54178d6d2a34e11440ac2908a2e9d.png",
       "https://imgur.com/n1NkgDr.gif",
       "https://imgur.com/TbXLUsa.gif",
@@ -574,7 +583,8 @@ const pluginsData = {
     name: "AlonsoLeaderboards",
     description: "Highly customizable leaderboards plugin for your server.",
     images: [
-      "https://i.imgur.com/7JMkmfc.png",
+      //"https://i.imgur.com/7JMkmfc.png",
+      "https://i.imgur.com/KqwsHwQ.png", //NEW FORMAT
       "https://i.badlion.net/rZGasceUmZS2wRbUxK3Xv3.png",
       "https://i.badlion.net/X2hnRBa7aMmJiRcwgvpSMo.png",
       "https://i.badlion.net/UbJBxjkpNiAUBZgCNmoNT6.png",
@@ -641,7 +651,8 @@ const pluginsData = {
     name: "BetterBees",
     description: "Enhance experience with bees in your server.",
     images: [
-      "https://i.imgur.com/AbcAFyd.png",
+      //"https://i.imgur.com/AbcAFyd.png",
+      "https://i.imgur.com/et06Wao.png", //NEW FORMAT
       "https://i.imgur.com/mdWKmhf.png",
       "https://i.imgur.com/Mbaw4xd.png",
       "https://i.badlion.net/9BkBTbyHtyuHmMD7dh9u98.png",
@@ -709,7 +720,8 @@ const pluginsData = {
     name: "BetterProfiles",
     description: "An amazing way to display players profiles to others.",
     images: [
-      "https://imgur.com/6s0WTUS.png",
+      //"https://imgur.com/6s0WTUS.png",
+      "https://i.imgur.com/3Z1nZUQ.png", //NEW FORMAT
       "https://imgur.com/mkvWwHw.gif",
       "https://i.gyazo.com/c9ae9fe81cb37e1d9977919fe252b920.png",
       "https://i.gyazo.com/12106583be0450c9936e468ed1fed07d.png",
@@ -749,7 +761,8 @@ const pluginsData = {
     name: "BetterTalisman",
     description: "Create talismans with boosts for your players.",
     images: [
-      "https://i.imgur.com/g46r0Y0.png",
+      //"https://i.imgur.com/g46r0Y0.png",
+      "https://i.imgur.com/7KgJXOH.png", //NEW FORMAT
       "https://i.imgur.com/qXbGvLh.png",
       "https://i.imgur.com/aZyaBJF.png",
       "https://i.gyazo.com/837b114a632c645a3ef00e6390de22b2.png",
@@ -771,7 +784,8 @@ const pluginsData = {
     name: "PunchStaff",
     description: 'Let your donors "thank" your staff members.',
     images: [
-      "https://i.imgur.com/YpwE8RB.png",
+      //"https://i.imgur.com/YpwE8RB.png",
+      "https://i.imgur.com/KisOyRN.png", //NEW FORMAT
       "https://imgur.com/RXfCgQU.gif",
       "https://i.gyazo.com/7ba6e71da16538f794ac596a5b718025.png",
       "https://i.gyazo.com/a55000a9f79b750994b85dc2c5cdfff1.png",
@@ -809,7 +823,8 @@ const pluginsData = {
     name: "BetterSocial",
     description: "Enhance your community by letting your players share their social media.",
     images: [
-      "https://i.imgur.com/qqtjaFr.png",
+      //"https://i.imgur.com/qqtjaFr.png",
+      "https://i.imgur.com/ppYdojU.png", //NEW FORMAT
       "https://i.gyazo.com/c55ba9b07dedfe63fee8ad3be3a7721a.png",
       "https://i.gyazo.com/885fb6ecd4a554038ee946209e4558e2.png",
       "https://i.gyazo.com/6b912f6bbb1518332363447b7aa26369.png",
